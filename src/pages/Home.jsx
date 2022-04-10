@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { MovieCard } from "../components";
 import MovieList from "../components/MovieList";
 import { apiGetAllLatestMovies } from "../services/apiService";
 import InfiniteScroll from "react-infinite-scroller";
@@ -41,10 +40,6 @@ export default function HomePage() {
       fetchAllMovies();
     }
   };
-
-  useEffect(() => {
-    // fetchAllMovies();
-  }, []);
 
   let html = {};
   html.listOfMovies = <MovieList movies={movies}></MovieList>;

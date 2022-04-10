@@ -103,7 +103,7 @@ export default function Header() {
     }
 
     window.addEventListener('resize', changeWidth)
-
+    changeWidth();
     return () => {
       window.removeEventListener('resize', changeWidth)
     }
