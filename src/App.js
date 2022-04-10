@@ -5,6 +5,7 @@ import {
   NewReleasePage,
   PopularPage,
   MovieDetailsPage,
+  AboutPage,
 } from './pages';
 import {
   Header,
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/" element={<HomePage />}></Route>
           <Route exact path="/popular" element={<PopularPage />}></Route>
           <Route exact path="/new-release" element={<NewReleasePage />}></Route>
+          <Route exact path="/about" element={<AboutPage />}></Route>
           <Route path="/details/:id" element={<MovieDetailsPage />}></Route>
         </Routes>
       </div>
